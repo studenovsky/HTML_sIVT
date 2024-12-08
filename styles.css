@@ -10,12 +10,16 @@ body {
     align-items: center;
 }
 
+p {
+    margin: 0.5rem 0;
+}
+
 /* Hlavička */
 header {
     text-align: center;
     background-color: #282c34;
     color: white;
-    padding: 1rem 0;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -27,6 +31,8 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Zajišťuje správné přizpůsobení menším obrazovkám */
+    box-sizing: border-box;
 }
 
 /* Vtip */
@@ -57,18 +63,23 @@ nav ul li {
     margin: 0.5rem 0;
 }
 
-/* Responzivita */
+/* Responzivní styl */
 @media (max-width: 600px) {
     body {
         font-size: 0.9rem;
-    }
-
-    main {
-        margin: 0.5rem;
-        padding: 0.5rem;
+        align-items: stretch; /* Umožní obsah rozprostřít na šířku obrazovky */
     }
 
     header h1 {
         font-size: 1.5rem;
+    }
+
+    main {
+        padding: 0.5rem; /* Menší odsazení na mobilních zařízeních */
+        margin: 0.5rem;
+    }
+
+    nav ul {
+        padding: 0.5rem;
     }
 }
