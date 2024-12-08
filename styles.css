@@ -5,6 +5,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Hlavička */
@@ -13,30 +16,23 @@ header {
     background-color: #282c34;
     color: white;
     padding: 1rem 0;
+    width: 100%;
 }
 
-/* Obrázek produktu */
-.product-image {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
+/* Hlavní obsah */
+main {
+    max-width: 800px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
-.logo-container {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.logo-container img {
-    width: 50px;
-    vertical-align: middle;
-}
-
-.logo-container span {
-    display: inline-block;
-    margin-left: 0.5rem;
+/* Vtip */
+.joke {
+    color: grey;
+    font-style: italic;
 }
 
 /* Odkazy */
@@ -53,23 +49,23 @@ a:hover {
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    margin: 1rem 0 0 0;
+    text-align: left;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0.5rem 0;
 }
 
-/* Media Queries pro responzivitu */
+/* Responzivita */
 @media (max-width: 600px) {
     body {
         font-size: 0.9rem;
     }
 
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+    main {
+        margin: 0.5rem;
+        padding: 0.5rem;
     }
 
     header h1 {
