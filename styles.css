@@ -1,0 +1,78 @@
+/* Obecné nastavení */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hlavička */
+header {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Obrázek produktu */
+.product-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.logo-container img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.logo-container span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/* Odkazy */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigační menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* Media Queries pro responzivitu */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
